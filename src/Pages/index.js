@@ -1,0 +1,11 @@
+export { default as Home } from './Home'
+export { default as Services } from './Services'
+export { default as About } from './About'
+export { default as Blog } from './Blog'
+export { default as Contact } from './Contact'
+export { default as Crm } from './Crm'
+export { default as CrmOnePage } from './CrmOnePage'
+export { default as Bpo } from './Bpo'
+export {default as ManageiT} from './ManageiT'
+export {default as CallCenter} from './CallCenter'
+

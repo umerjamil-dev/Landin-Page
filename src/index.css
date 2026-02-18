@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+
+
+/* theme  */
+@theme {
+  /* fonts */
+  --font-poppins: "Poppins", sans-serif;
+
+  /* colors */
+  --color-primary-red: #ED1C24;
+  --color-primary-black: #0C0C0C;
+  --color-primary-gray: #343A40;
+  --breakpoint-custom-size: 71.0625rem;
+  --breakpoint-custom-size-two: 88.875rem;
+}
+
+/* layer  */
+@layer {
+  .custom-padding {
+    @apply px-4 md:px-9 lg:px-16 xl:px-20 ;
+  }
+  
+ 
+  h1 {
+    @apply text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
+  }
+  p {
+    @apply md:text-lg;
+  }
+  
+  .floating-element {
+    
+    animation: float 3s ease-in-out infinite; 
+  }
+  pr{
+    padding-left: 10px; 
+  
+  }
+}
+/* custom classes  */
+
+.bg-red{
+  background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(240, 0, 0, 1) 100%);
+}
+ /* body class  */
+body {
+  overflow-x: hidden !important;
+  font-family: var(--font-poppins);
+}
+/* float animations keyframes  */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
