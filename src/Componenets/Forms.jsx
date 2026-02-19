@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Contact1, Line1, Line2 } from '../assets'
-import { Mail, Phone, Clock } from 'lucide-react'
+import { Mail, Phone, Clock, ClockAlert } from 'lucide-react'
 import axios from 'axios'
 import { toast } from 'react-hot-toast'
 import { countries } from '../utils/countries'
@@ -140,12 +140,12 @@ console.log(error);
                             />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                            <div className="flex gap-2">
+                            <div className="flex flex-col sm:flex-row gap-2">
                                 <select
                                     name="countryCode"
                                     value={formData.countryCode}
                                     onChange={handleChange}
-                                    className="w-[120px] bg-white px-2 py-4 rounded-xl outline-none focus:ring-2 focus:ring-primary-red/20 transition-all text-primary-black border border-transparent focus:border-primary-red/30"
+                                    className="w-full sm:w-[120px] bg-white px-2 py-4 rounded-xl outline-none focus:ring-2 focus:ring-primary-red/20 transition-all text-primary-black border border-transparent focus:border-primary-red/30"
                                 >
                                     {countries.map((country) => (
                                         <option key={`${country.code}-${country.dial_code}`} value={country.dial_code}>
