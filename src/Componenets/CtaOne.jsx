@@ -53,10 +53,10 @@ const CtaOne = () => {
 
                 {/* Left Content */}
                 <div className="text-white space-y-6 z-10">
-                    <div className='bg-white/10 px-4 py-2 rounded-full w-fit text-xs font-bold tracking-widest uppercase'>
+                    <div className='bg-white/10 px-4 py-2 rounded-full w-fit text-xs font-medium tracking-widest uppercase'>
                         Join the Revolution
                     </div>
-                    <h2 className="text-4xl md:text-5xl   font-semibold leading-tight">
+                    <h2 className="text-4xl md:text-5xl   font-medium leading-tight">
                         Ready to accelerate <br /> your business growth?
                     </h2>
                     <p className="text-white/90 font-medium text-lg max-w-xl leading-relaxed">
@@ -67,7 +67,7 @@ const CtaOne = () => {
                 {/* Right Form */}
                 <div className="w-full space-y-8 bg-white/10 p-8 md:p-12 rounded-[2.5rem] backdrop-blur-md border border-white/10 z-10">
                     <div className="space-y-4">
-                        <h3 className="text-white text-2xl md:text-3xl font-bold leading-tight">
+                        <h3 className="text-white text-2xl md:text-3xl font-medium leading-tight">
                             Get a Free Strategic Consultation
                         </h3>
                         <p className='text-white/70 text-sm font-medium'>Our experts will analyze your workflow and propose a customized technology roadmap.</p>
@@ -82,7 +82,7 @@ const CtaOne = () => {
                                 onChange={handleChange}
                                 placeholder="Full Name"
                                 required
-                                className="w-full bg-white text-primary-black px-8 py-5 rounded-3xl font-bold focus:outline-none focus:ring-4 focus:ring-white/20 transition-all placeholder:text-gray-400 border-none"
+                                className="w-full bg-white text-primary-black px-8 py-5 rounded-3xl font-medium focus:outline-none focus:ring-4 focus:ring-white/20 transition-all placeholder:text-gray-400 border-none"
                             />
                             <input
                                 type="email"
@@ -91,7 +91,7 @@ const CtaOne = () => {
                                 onChange={handleChange}
                                 placeholder="Business Email"
                                 required
-                                className="w-full bg-white text-primary-black px-8 py-5 rounded-3xl font-bold focus:outline-none focus:ring-4 focus:ring-white/20 transition-all placeholder:text-gray-400 border-none"
+                                className="w-full bg-white text-primary-black px-8 py-5 rounded-3xl font-medium focus:outline-none focus:ring-4 focus:ring-white/20 transition-all placeholder:text-gray-400 border-none"
                             />
                         </div>
                         <motion.button

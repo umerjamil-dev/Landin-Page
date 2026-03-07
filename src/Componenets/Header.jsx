@@ -42,7 +42,7 @@ const Header = () => {
 
                 {/* Logo */}
                 <Link to="/">
-                   <img className=' w-55   custom-size-two:w-65' src={Logo} alt="" />
+                    <img className=' w-55   custom-size-two:w-65' src={Logo} alt="" />
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -97,7 +97,7 @@ const Header = () => {
                                                     <Link
                                                         key={item.name}
                                                         to={item.path}
-                                                        className="text-white hover:text-primary-red text-sm font-bold p-3 rounded-xl hover:bg-primary-red/10 transition-all duration-300"
+                                                        className="text-white hover:text-primary-red text-sm font-medium p-3 rounded-xl hover:bg-primary-red/10 transition-all duration-300"
                                                     >
                                                         {item.name}
                                                     </Link>
@@ -168,7 +168,7 @@ const Header = () => {
                                 <X size={32} />
                             </button>
 
-                            <ul className="flex flex-col space-y-4 capitalize text-2xl font-semibold">
+                            <ul className="flex flex-col space-y-4 capitalize text-2xl font-medium">
                                 {navLinks.map((link) => (
                                     <li key={link.name}>
                                         {link.dropdown ? (
@@ -220,7 +220,7 @@ const Header = () => {
 
                             <div className="mt-12 flex flex-col space-y-4 w-full">
                                 <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="w-full">
-                                    <button className="w-full bg-primary-red text-white py-4 rounded-xl text-xl font-semibold">
+                                    <button className="w-full bg-primary-red text-white py-4 rounded-xl text-xl font-medium">
                                         Contact Us
                                     </button>
                                 </Link>
@@ -229,7 +229,7 @@ const Header = () => {
                                         setIsMobileMenuOpen(false);
                                         setIsModalOpen(true);
                                     }}
-                                    className="w-full border-2 border-primary-red text-primary-red py-4 rounded-xl text-xl font-semibold"
+                                    className="w-full border-2 border-primary-red text-primary-red py-4 rounded-xl text-xl font-medium"
                                 >
                                     Request a Demo
                                 </button>

@@ -15,13 +15,13 @@ const CallCenter = () => {
                 btn1Text="See Solutions"
                 btn2Text="Free Consultation"
             />
-               
+
             {/* Core Call Center Services Section */}
             <CrmCore
                 title={(
                     <>
                         Complete Customer <br />
-                        <span className="relative inline-block mt-2 font-bold">
+                        <span className="relative inline-block mt-2 font-medium">
                             Engagement Support
                         </span>
                     </>
@@ -58,7 +58,7 @@ const CallCenter = () => {
                         viewport={{ once: true }}
                         className="space-y-6"
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-medium text-slate-900 leading-tight">
                             Why Expert Call Center <br /> Operations Drive Growth
                         </h2>
                         <div className="w-20 h-1 bg-primary-red rounded-full"></div>
@@ -83,7 +83,7 @@ const CallCenter = () => {
                         ].map((item, idx) => (
                             <div key={idx} className="bg-white p-8 rounded-2xl shadow-lg flex flex-col items-center gap-4 text-center border border-slate-100 hover:border-primary-red/20 transition-all">
                                 {item.icon}
-                                <span className="font-bold text-slate-800">{item.title}</span>
+                                <span className="font-medium text-slate-800">{item.title}</span>
                             </div>
                         ))}
                     </motion.div>
@@ -109,7 +109,7 @@ const CallCenter = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-5xl font-bold text-slate-900"
+                        className="text-3xl md:text-5xl font-medium text-slate-900"
                     >
                         Our Call Center Operational Workflow
                     </motion.h2>
@@ -141,8 +141,8 @@ const CallCenter = () => {
                                     className="space-y-4 p-6 rounded-2xl bg-slate-50 border border-slate-100"
                                 >
                                     <span className="text-5xl font-black text-primary-red/20">{method.step}</span>
-                                    <h3 className="text-xl font-bold text-slate-900">{method.title}</h3>
-                                    <p className="text-slate-600 leading-relaxed font-semibold">{method.desc}</p>
+                                    <h3 className="text-xl font-medium text-slate-900">{method.title}</h3>
+                                    <p className="text-slate-600 leading-relaxed font-medium">{method.desc}</p>
                                 </motion.div>
                             ))}
                     </div>

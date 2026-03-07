@@ -38,7 +38,7 @@ const BlogsHero = () => {
                 >
                     <motion.h1
                         variants={itemVariants}
-                        className='text-4xl md:text-5xl lg:text-7xl font-bold text-primary-black leading-[1.2] capitalize'
+                        className='text-4xl md:text-5xl lg:text-7xl font-medium text-primary-black leading-[1.2] capitalize'
                     >
                         Insights From Our
                         <br className='hidden custom-size:block' />
@@ -62,7 +62,7 @@ const BlogsHero = () => {
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className='border-2 border-primary-red text-primary-black px-10 py-3 rounded-full font-bold transition-all hover:bg-primary-red hover:text-white'
+                                className='border-2 border-primary-red text-primary-black px-10 py-3 rounded-full font-medium transition-all hover:bg-primary-red hover:text-white'
                             >
                                 Get Started Now
                             </motion.button>
@@ -71,7 +71,7 @@ const BlogsHero = () => {
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className='bg-primary-black text-primary-red px-8 py-3 rounded-full font-bold flex items-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black'
+                                className='bg-primary-black text-primary-red px-8 py-3 rounded-full font-medium flex items-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black'
                             >
                                 Request a Demo
                             </motion.button>

@@ -40,11 +40,11 @@ const StatCircle = ({ percentage, label, description }) => {
                     />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-lg  font-semibold text-primary-black">{percentage}%</span>
+                    <span className="text-lg  font-medium text-primary-black">{percentage}%</span>
                 </div>
             </div>
             <div className="space-y-1">
-                <h4 className="text-lg  font-semibold text-primary-black uppercase tracking-wider">{label}</h4>
+                <h4 className="text-lg  font-medium text-primary-black uppercase tracking-wider">{label}</h4>
                 <p className="text-sm text-primary-gray leading-relaxed max-w-[280px]">{description}</p>
             </div>
         </motion.div>
@@ -69,7 +69,7 @@ const WhyChooseUsOne = () => {
                             className="flex items-center gap-3 text-primary-black mb-8"
                         >
                             <ArrowRight className="w-6 h-6 text-primary-black" />
-                            <span className="text-xl font-bold uppercase ">Why Choose Us</span>
+                            <span className="text-xl font-medium uppercase ">Why Choose Us</span>
                         </motion.div>
 
                         <motion.h2
@@ -77,7 +77,7 @@ const WhyChooseUsOne = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                             viewport={{ once: true }}
-                            className="text-4xl md:text-5xl   font-semibold text-primary-black leading-[1.1] tracking-tight"
+                            className="text-4xl md:text-5xl   font-medium text-primary-black leading-[1.1] tracking-tight"
                         >
                             Unlock the potential <br className="hidden md:block" /> of your business.
                         </motion.h2>
@@ -111,10 +111,10 @@ const WhyChooseUsOne = () => {
                         <div className="absolute -bottom-0 -left-0 w-24 h-16 bg-primary-red/40 -z-10 group-hover:scale-110 transition-transform -z-9 hidden md:block "></div>
 
                         <div className="space-y-8">
-                            <img src={Logo21} className=' h-30'  alt="" />
+                            <img src={Logo21} className=' h-30' alt="" />
 
                             <div className="space-y-6">
-                                <h4 className="text-3xl md:text-4xl  font-bold text-white leading-tight">
+                                <h4 className="text-3xl md:text-4xl  font-medium text-white leading-tight">
                                     Best Creative IT Agency And Solutions Since 2005.
                                 </h4>
                                 <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
@@ -124,14 +124,14 @@ const WhyChooseUsOne = () => {
 
                             <div className="flex flex-wrap items-center justify-between gap-8 pt-6">
                                 <div className="flex items-baseline gap-2">
-                                    <span className="text-6xl  font-semibold text-white"># 1</span>
+                                    <span className="text-6xl  font-medium text-white"># 1</span>
                                 </div>
 
                                 <Link to="/contact">
                                     <motion.button
                                         whileHover={{ scale: 1.05, backgroundColor: "#ED1C24" }}
                                         whileTap={{ scale: 0.95 }}
-                                        className="px-12 py-4 bg-transparent border-2 border-primary-red rounded-full text-white  font-semibold uppercase tracking-widest text-sm transition-all shadow-[0_10px_20px_rgba(237,28,36,0.2)]"
+                                        className="px-12 py-4 bg-transparent border-2 border-primary-red rounded-full text-white  font-medium uppercase tracking-widest text-sm transition-all shadow-[0_10px_20px_rgba(237,28,36,0.2)]"
                                     >
                                         About More
                                     </motion.button>

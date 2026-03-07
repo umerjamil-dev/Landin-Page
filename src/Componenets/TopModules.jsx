@@ -16,37 +16,37 @@ const TopModules = () => {
                 title: 'Employee',
                 desc: 'Manage employee records and workforce operations seamlessly ',
                 icon: <Users size={32} />
-            },     
+            },
             {
                 id: 2,
                 title: 'Recruitment',
                 desc: 'Manage hiring process and talent acquisition tasks efficiently  ',
                 icon: <Briefcase size={32} />
-            },  
+            },
             {
                 id: 3,
                 title: 'Attendance',
                 desc: 'Manage employee time tracking and attendance records ',
                 icon: <Clock size={32} />
-            },   
+            },
             {
                 id: 4,
                 title: 'Payroll',
                 desc: 'Manage salaries, taxes, deductions and payment processing ',
                 icon: <BarChart3 size={32} />
-            },  
+            },
             {
                 id: 5,
                 title: 'Performance',
                 desc: 'Manage employee KPIs and performance review processes ',
                 icon: <ShieldCheck size={32} />
-            },   
+            },
             {
                 id: 6,
                 title: 'Documents',
                 desc: 'Manage document storage with secure access and control ',
                 icon: <FileText size={32} />
-            }     
+            }
         ];
 
     return (
@@ -57,7 +57,7 @@ const TopModules = () => {
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl font-semibold text-primary-black uppercase tracking-tight"
+                    className="text-4xl font-medium text-primary-black uppercase tracking-tight"
                 >
                     ProcessIQ Tech Core Ecosystem
                 </motion.h2>
@@ -103,8 +103,8 @@ const TopModules = () => {
                                     {module.icon}
                                 </div>
                                 <div className="space-y-2">
-                                    <h3 className="text-xl md:text-2xl  font-semibold text-primary-black">{module.title}</h3>
-                                    <p className="text-primary-gray font-semibold leading-relaxed">
+                                    <h3 className="text-xl md:text-2xl  font-medium text-primary-black">{module.title}</h3>
+                                    <p className="text-primary-gray font-medium leading-relaxed">
                                         {module.desc}
                                     </p>
                                 </div>

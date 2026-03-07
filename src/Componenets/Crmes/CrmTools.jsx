@@ -11,7 +11,7 @@ const CrmTools = () => {
                     {/* Headers */}
                     <div className='text-center  mx-auto '>
                         <h4 className='text-xl font-medium text-gray-900 mb-4'>Our Integrations</h4>
-                        <h2 className='text-3xl md:text-5xl font-bold text-gray-900 mb-6'>Connect Your Favorite Tools</h2>
+                        <h2 className='text-3xl md:text-5xl font-medium text-gray-900 mb-6'>Connect Your Favorite Tools</h2>
                         <p className='text-gray-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto'>
                             Enhance Your CRM Experience By Integrating With The Apps You Already Use. From Email And Marketing Tools To Payment Systems, Everything Works Together Seamlessly.
                         </p>
@@ -44,7 +44,7 @@ const CrmTools = () => {
                         {/* Center Button */}
                         <div className='relative z-20 shrink-0'>
                             <Link to="/contact">
-                                <button className='bg-black text-white px-8 py-4 border border-primary-red border-2 rounded-full text-lg font-semibold hover:bg-gray-800 transition-all shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 '>
+                                <button className='bg-black text-white px-8 py-4 border border-primary-red border-2 rounded-full text-lg font-medium hover:bg-gray-800 transition-all shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 '>
                                     See All Integrations
                                 </button>
                             </Link>

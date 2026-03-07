@@ -71,7 +71,7 @@ const CrmHeroOne = ({
                 >
                     <motion.h1
                         variants={itemVariants}
-                        className='text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold text-primary-black leading-tight capitalize  lg:text-left'
+                        className='text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-medium text-primary-black leading-tight capitalize  lg:text-left'
                     >
                         {title}
                     </motion.h1>
@@ -91,7 +91,7 @@ const CrmHeroOne = ({
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className='border-2 border-primary-red px-10 py-4 rounded-full font-bold transition-all hover:bg-transparent hover:text-primary-black w-full sm:w-auto shadow-lg shadow-primary-red/20'
+                                className='border-2 border-primary-red px-10 py-4 rounded-full font-medium transition-all hover:bg-transparent hover:text-primary-black w-full sm:w-auto shadow-lg shadow-primary-red/20'
                             >
                                 {btn1Text}
                             </motion.button>
@@ -100,7 +100,7 @@ const CrmHeroOne = ({
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className='bg-primary-black text-white px-10 py-4 rounded-full font-bold flex items-center justify-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black w-full sm:w-auto'
+                                className='bg-primary-black text-white px-10 py-4 rounded-full font-medium flex items-center justify-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black w-full sm:w-auto'
                             >
                                 {btn2Text}
                             </motion.button>
@@ -133,7 +133,7 @@ const CrmHeroOne = ({
                             animate={floatAnimation}
                             className="absolute -top-4 -left-4 md:-top-8 md:-left-8 z-20 bg-white p-3 md:p-4 rounded-xl shadow-2xl border border-gray-100 hidden sm:block w-48"
                         >
-                            <h4 className="text-[9px] md:text-[11px] font-bold text-primary-black mb-3">Volume vs Service Level</h4>
+                            <h4 className="text-[9px] md:text-[11px] font-medium text-primary-black mb-3">Volume vs Service Level</h4>
                             <div className="flex items-end gap-2 h-16 md:h-20 mb-3 px-1">
                                 {[
                                     { p: 40, g: 35 },
@@ -165,17 +165,17 @@ const CrmHeroOne = ({
                                 <div className="flex flex-col items-center">
                                     <div className="flex items-center gap-1 mb-0.5">
                                         <span className="w-1.5 h-1.5 rounded-sm bg-[#8b5cf6]"></span>
-                                        <span className="text-[7px] md:text-[8px] font-semibold text-gray-400 uppercase">Volume</span>
+                                        <span className="text-[7px] md:text-[8px] font-medium text-gray-400 uppercase">Volume</span>
                                     </div>
-                                    <span className="text-[10px] font-bold text-primary-black">1.65</span>
+                                    <span className="text-[10px] font-medium text-primary-black">1.65</span>
                                 </div>
                                 <div className="w-[1px] h-4 bg-gray-100 mx-1"></div>
                                 <div className="flex flex-col items-center">
                                     <div className="flex items-center gap-1 mb-0.5">
                                         <span className="w-1.5 h-1.5 rounded-sm bg-[#10b981]"></span>
-                                        <span className="text-[7px] md:text-[8px] font-semibold text-gray-400 uppercase">Services</span>
+                                        <span className="text-[7px] md:text-[8px] font-medium text-gray-400 uppercase">Services</span>
                                     </div>
-                                    <span className="text-[10px] font-bold text-primary-black">635</span>
+                                    <span className="text-[10px] font-medium text-primary-black">635</span>
                                 </div>
                             </div>
                         </motion.div>
@@ -185,10 +185,10 @@ const CrmHeroOne = ({
                             animate={floatAnimationReverse}
                             className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 z-20 bg-white p-3 rounded-xl shadow-2xl border border-gray-100 hidden sm:block w-56"
                         >
-                            <h4 className="text-[9px] md:text-[12px] font-bold text-primary-black mb-3">Sales Reports</h4>
+                            <h4 className="text-[9px] md:text-[12px] font-medium text-primary-black mb-3">Sales Reports</h4>
 
                             <div className="relative h-24 md:h-30 w-full mb-3 flex gap-2">
-                                <div className="flex flex-col justify-between h-full text-[6px] md:text-[8px] font-bold text-gray-300 pr-0.5">
+                                <div className="flex flex-col justify-between h-full text-[6px] md:text-[8px] font-medium text-gray-300 pr-0.5">
                                     <span>200</span>
                                     <span>100</span>
                                     <span>0</span>
@@ -234,7 +234,7 @@ const CrmHeroOne = ({
 
                                     <div className="flex justify-between mt-1.5">
                                         {['Jan', 'Apr', 'Jul', 'Oct', 'Dec'].map(m => (
-                                            <span key={m} className="text-[6px] md:text-[7px] font-bold text-gray-300">{m}</span>
+                                            <span key={m} className="text-[6px] md:text-[7px] font-medium text-gray-300">{m}</span>
                                         ))}
                                     </div>
                                 </div>
@@ -243,15 +243,15 @@ const CrmHeroOne = ({
                             <div className="flex justify-center gap-2 pt-2 border-t border-gray-50 flex-wrap">
                                 <div className="flex items-center gap-1">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#a855f7]"></span>
-                                    <span className="text-[7px] md:text-[8px] font-bold text-gray-400">Actual</span>
+                                    <span className="text-[7px] md:text-[8px] font-medium text-gray-400">Actual</span>
                                 </div>
                                 <div className="flex items-center gap-1">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#ef4444]"></span>
-                                    <span className="text-[7px] md:text-[8px] font-bold text-gray-400">New</span>
+                                    <span className="text-[7px] md:text-[8px] font-medium text-gray-400">New</span>
                                 </div>
                                 <div className="flex items-center gap-1">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e]"></span>
-                                    <span className="text-[7px] md:text-[8px] font-bold text-gray-400">Unique</span>
+                                    <span className="text-[7px] md:text-[8px] font-medium text-gray-400">Unique</span>
                                 </div>
                             </div>
                         </motion.div>

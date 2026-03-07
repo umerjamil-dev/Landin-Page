@@ -254,7 +254,7 @@ const CrmModule = () => {
         },
 
     ];
-    
+
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -290,7 +290,7 @@ const CrmModule = () => {
                         <motion.h1
                             initial={{ x: -20, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
-                            className="text-3xl md:text-5xl font-semibold text-slate-800 mb-3"
+                            className="text-3xl md:text-5xl font-medium text-slate-800 mb-3"
                         >
                             CRM Modules Dashboard
                         </motion.h1>
@@ -298,7 +298,7 @@ const CrmModule = () => {
                             initial={{ x: -20, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ delay: 0.1 }}
-                            className="flex items-center text-sm font-bold tracking-wide"
+                            className="flex items-center text-sm font-medium tracking-wide"
                         >
                             <Link to="/" className="text-primary-red transition-all cursor-pointer">Dashboard</Link>
                             <span className="mx-3 text-gray-300">/</span>
@@ -313,7 +313,7 @@ const CrmModule = () => {
                         className="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-3"
                     >
                         <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse ring-4 ring-emerald-500/10"></span>
-                        <span className="text-sm font-bold text-slate-600">All Systems Operational</span>
+                        <span className="text-sm font-medium text-slate-600">All Systems Operational</span>
                     </motion.div>
                 </div>
 
@@ -357,8 +357,8 @@ const CrmModule = () => {
 
                             {/* Content */}
                             <div className="relative z-10">
-                                <h3 className="text-primary-red font-bold text-[10px] uppercase tracking-wider mb-0.5">CRM</h3>
-                                <p className="text-slate-600 font-bold text-sm leading-snug group-hover:text-primary-red transition-colors duration-300">
+                                <h3 className="text-primary-red font-medium text-[10px] uppercase tracking-wider mb-0.5">CRM</h3>
+                                <p className="text-slate-600 font-medium text-sm leading-snug group-hover:text-primary-red transition-colors duration-300">
                                     {module.name}
                                 </p>
                             </div>
@@ -438,7 +438,7 @@ const CrmModule = () => {
                                                             initial={{ opacity: 0, x: -10 }}
                                                             animate={{ opacity: 1, x: 0 }}
                                                             transition={{ delay: (idx * 0.1) + (pIdx * 0.05) }}
-                                                            className="flex items-start gap-4 text-slate-600 text-lg font-semibold"
+                                                            className="flex items-start gap-4 text-slate-600 text-lg font-medium"
                                                         >
                                                             <div className="mt-2 w-2.5 h-2.5 rounded-full bg-primary-red flex-shrink-0 shadow-sm shadow-primary-red/30" />
                                                             {point}
@@ -461,7 +461,7 @@ const CrmModule = () => {
                             {/* Modal Footer - Fixed */}
                             <div className="p-8 md:p-12 pt-6 bg-white border-t border-slate-50">
                                 <Link to="/contact">
-                                    <button className="w-full bg-primary-red hover:bg-slate-900 text-white py-5 rounded-2xl text-lg font-bold transition-all duration-300 shadow-xl shadow-primary-red/20 flex items-center justify-center gap-3 group">
+                                    <button className="w-full bg-primary-red hover:bg-slate-900 text-white py-5 rounded-2xl text-lg font-medium transition-all duration-300 shadow-xl shadow-primary-red/20 flex items-center justify-center gap-3 group">
                                         Launch Full System Interface
                                         <ChevronRight size={20} className="group-hover:translate-x-2 transition-transform" />
                                     </button>

@@ -37,89 +37,89 @@ const FAQS = () => {
             answer: "Our BPO solutions are technology-led. We combine highly skilled professionals with proprietary automation tools to deliver higher accuracy and faster turnaround times."
         }
     ];
-// faqs section is here 
+    // faqs section is here 
     return (
-       <>
-        <section className="custom-padding py-24 bg-white overflow-hidden font-outfit">
-            <div className="grid custom-size:grid-cols-2 gap-16 items-start">
+        <>
+            <section className="custom-padding py-24 bg-white overflow-hidden font-outfit">
+                <div className="grid custom-size:grid-cols-2 gap-16 items-start">
 
-                {/* Left Content */}
-                <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: true }}
-                    className="space-y-8"
-                >
-                    <div className='flex items-center gap-2 text-primary-red font-bold tracking-widest text-sm uppercase'>
-                        <span className='w-10 h-[2px] bg-primary-red'></span>
-                        Support Center
-                    </div>
-                    <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold text-primary-black leading-tight">
-                        Got Questions? <br /> We have <span className='text-primary-red'>Answers.</span>
-                    </h2>
-                    <p className="text-slate-600 font-medium text-lg max-w-lg leading-relaxed">
-                        Find everything you need to know about our technology ecosystem and how we can transform your business operations.
-                    </p>
-                    <Link to="/contact">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-primary-black text-white px-10 py-4 rounded-full font-bold text-lg shadow-2xl transition-all hover:bg-primary-red tracking-wider"
-                        >
-                            Contact Support
-                        </motion.button>
-                    </Link>
-                </motion.div>
+                    {/* Left Content */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="space-y-8"
+                    >
+                        <div className='flex items-center gap-2 text-primary-red font-medium tracking-widest text-sm uppercase'>
+                            <span className='w-10 h-[2px] bg-primary-red'></span>
+                            Support Center
+                        </div>
+                        <h2 className="text-4xl md:text-5xl lg:text-7xl font-medium text-primary-black leading-tight">
+                            Got Questions? <br /> We have <span className='text-primary-red'>Answers.</span>
+                        </h2>
+                        <p className="text-slate-600 font-medium text-lg max-w-lg leading-relaxed">
+                            Find everything you need to know about our technology ecosystem and how we can transform your business operations.
+                        </p>
+                        <Link to="/contact">
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-primary-black text-white px-10 py-4 rounded-full font-medium text-lg shadow-2xl transition-all hover:bg-primary-red tracking-wider"
+                            >
+                                Contact Support
+                            </motion.button>
+                        </Link>
+                    </motion.div>
 
-                {/* Right Accordion */}
-                <div className="flex flex-col space-y-4">
-                    {faqData.map((faq, index) => {
-                        const isActive = activeIndex === index;
-                        return (
-                            <div key={index} className="overflow-hidden bg-slate-50 rounded-2xl border border-slate-100 transition-all duration-300 hover:shadow-md">
-                                <motion.div
-                                    animate={{
-                                        backgroundColor: isActive ? "#ED1C24" : "rgba(255, 255, 255, 0)",
-                                        color: isActive ? "#FFFFFF" : "#000000"
-                                    }}
-                                    className={`cursor-pointer px-8 py-6 flex items-center justify-between transition-all duration-300 `}
-                                    onClick={() => setActiveIndex(isActive ? -1 : index)}
-                                >
-                                    <span className="text-lg font-bold">{faq.question}</span>
+                    {/* Right Accordion */}
+                    <div className="flex flex-col space-y-4">
+                        {faqData.map((faq, index) => {
+                            const isActive = activeIndex === index;
+                            return (
+                                <div key={index} className="overflow-hidden bg-slate-50 rounded-2xl border border-slate-100 transition-all duration-300 hover:shadow-md">
                                     <motion.div
-                                        animate={{ rotate: isActive ? 180 : 0 }}
-                                        transition={{ duration: 0.3 }}
-                                        className={isActive ? 'text-white' : 'text-primary-red'}
+                                        animate={{
+                                            backgroundColor: isActive ? "#ED1C24" : "rgba(255, 255, 255, 0)",
+                                            color: isActive ? "#FFFFFF" : "#000000"
+                                        }}
+                                        className={`cursor-pointer px-8 py-6 flex items-center justify-between transition-all duration-300 `}
+                                        onClick={() => setActiveIndex(isActive ? -1 : index)}
                                     >
-                                        <ChevronDown size={24} />
-                                    </motion.div>
-                                </motion.div>
-
-                                <AnimatePresence>
-                                    {isActive && (
+                                        <span className="text-lg font-medium">{faq.question}</span>
                                         <motion.div
-                                            initial={{ height: 0, opacity: 0 }}
-                                            animate={{ height: "auto", opacity: 1 }}
-                                            exit={{ height: 0, opacity: 0 }}
-                                            transition={{ duration: 0.3, ease: "easeInOut" }}
-                                            className="bg-primary-red"
+                                            animate={{ rotate: isActive ? 180 : 0 }}
+                                            transition={{ duration: 0.3 }}
+                                            className={isActive ? 'text-white' : 'text-primary-red'}
                                         >
-                                            <div className="px-8 pb-8 pt-2 text-white/90 font-medium font-semibold leading-relaxed">
-                                                {faq.answer}
-                                            </div>
+                                            <ChevronDown size={24} />
                                         </motion.div>
-                                    )}
-                                </AnimatePresence>
-                            </div>
-                        );
-                    })}
-                </div>
+                                    </motion.div>
 
-            </div>
-        </section>
-        <Entry/>
-       </>
+                                    <AnimatePresence>
+                                        {isActive && (
+                                            <motion.div
+                                                initial={{ height: 0, opacity: 0 }}
+                                                animate={{ height: "auto", opacity: 1 }}
+                                                exit={{ height: 0, opacity: 0 }}
+                                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                                className="bg-primary-red"
+                                            >
+                                                <div className="px-8 pb-8 pt-2 text-white/90 font-medium font-medium leading-relaxed">
+                                                    {faq.answer}
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                </div>
+                            );
+                        })}
+                    </div>
+
+                </div>
+            </section>
+            <Entry />
+        </>
     );
 };
 

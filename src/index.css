@@ -15,6 +15,7 @@
   --color-primary-gray: #343A40;
   --breakpoint-custom-size: 71.0625rem;
   --breakpoint-custom-size-two: 88.875rem;
+   --breakpoint-custom-size-small: 10rem;
 }
 
 /* layer  */

@@ -14,9 +14,9 @@ const Forms = () => {
         email: '',
         serviceType: '',
         message: '',
-    }) ;
+    });
 
-    const [error,setError] = useState('lll')
+    const [error, setError] = useState('lll')
     const [loading, setLoading] = useState(false)
 
     const handleChange = (e) => {
@@ -77,7 +77,7 @@ const Forms = () => {
             subtitle: "Mon-Sat: 9 AM - 6 PM"
         }
     ]
-console.log(error);
+    console.log(error);
 
     return (
         <section className="custom-padding py-16 bg-white relative font-outfit">
@@ -85,7 +85,7 @@ console.log(error);
             <img src={Line2} alt="" className='absolute bottom-0 right-0' />
             {/* Header */}
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-5xl font-bold text-primary-black">Let's Discuss Your Business Needs</h2>
+                <h2 className="text-3xl md:text-5xl font-medium text-primary-black">Let's Discuss Your Business Needs</h2>
             </div>
 
             {/* Info Boxes */}
@@ -101,7 +101,7 @@ console.log(error);
                             {info.icon}
                         </div>
                         <div>
-                            <h3 className="font-bold text-lg leading-tight">{info.title}</h3>
+                            <h3 className="font-medium text-lg leading-tight">{info.title}</h3>
                             <p className={`text-sm font-medium text-gray-500 group-hover:text-white/90`}>{info.subtitle}</p>
                         </div>
                     </div>
@@ -117,7 +117,7 @@ console.log(error);
 
                 {/* Form */}
                 <div className="bg-gray-100 p-6 md:p-10 rounded-3xl z-10 shadow-lg">
-                    <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary-black">Get In Touch Now</h3>
+                    <h3 className="text-3xl md:text-4xl font-medium mb-8 text-primary-black">Get In Touch Now</h3>
                     <form className="space-y-6" onSubmit={handleSubmit}>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                             <input
@@ -200,7 +200,7 @@ console.log(error);
                         <button
                             type="submit"
                             disabled={loading}
-                            className="w-full bg-primary-red text-white title text-xl font-bold py-4 rounded-xl hover:bg-primary-black transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50"
+                            className="w-full bg-primary-red text-white title text-xl font-medium py-4 rounded-xl hover:bg-primary-black transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50"
                         >
                             {loading ? 'Sending...' : 'Get Started Now'}
                         </button>

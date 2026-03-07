@@ -19,7 +19,7 @@ const Card = ({ card, index }) => {
             {/* Base Content */}
             <div className={`relative z-0 transition-all duration-500 ease-in-out ${isHovered ? 'opacity-20 scale-[0.98] blur-[2px]' : 'opacity-100'}`}>
                 <div className="flex justify-between items-start mb-6">
-                    <h3 className="text-xl md:text-2xl font-bold text-primary-black leading-tight max-w-[80%]">
+                    <h3 className="text-xl md:text-2xl font-medium text-primary-black leading-tight max-w-[80%]">
                         {card.title}
                     </h3>
                     {/* Arrow Trigger - The specific hover target */}
@@ -59,7 +59,7 @@ const Card = ({ card, index }) => {
                             transition={{ delay: 0.1 }}
                             className="w-full"
                         >
-                            <h4 className="text-white font-bold text-2xl mb-6 border-b border-white/30 pb-4">
+                            <h4 className="text-white font-medium text-2xl mb-6 border-b border-white/30 pb-4">
                                 Key Features
                             </h4>
                             <ul className="space-y-4">
@@ -198,7 +198,7 @@ const Accounts = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="text-4xl md:text-6xl text-primary-black font-bold mx-auto leading-tight"
+                        className="text-4xl md:text-6xl text-primary-black font-medium mx-auto leading-tight"
                     >
                         Smart HRM & Employee <br className="hidden md:block" />  Self Service Portal
                     </motion.h2>

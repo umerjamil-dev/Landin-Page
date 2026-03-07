@@ -21,7 +21,7 @@ const OurApproach = () => {
                         viewport={{ once: true }}
                         className='space-y-6'
                     >
-                        <h2 className='text-3xl md:text-5xl lg:text-7xl font-bold text-primary-black leading-tight'>
+                        <h2 className='text-3xl md:text-5xl lg:text-7xl font-medium text-primary-black leading-tight'>
                             Our Strategic <span className='text-primary-red'>Approach</span>
                         </h2>
                         <p className='text-slate-600 text-lg md:text-xl leading-relaxed max-w-3xl font-medium'>
@@ -47,7 +47,7 @@ const OurApproach = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.2 }}
                                 viewport={{ once: true }}
-                                className='text-2xl md:text-4xl lg:text-5xl font-bold text-primary-black leading-tight'
+                                className='text-2xl md:text-4xl lg:text-5xl font-medium text-primary-black leading-tight'
                             >
                                 Unlock the full potential <br className="hidden md:block" /> of your business ecosystem.
                             </motion.h2>
@@ -87,9 +87,9 @@ const OurApproach = () => {
                                     >
                                         <div className="flex items-center gap-3">
                                             <div className='w-1 h-8 bg-primary-red rounded-full'></div>
-                                            <h3 className='text-xl md:text-2xl font-bold text-primary-black'>{item.title}</h3>
+                                            <h3 className='text-xl md:text-2xl font-medium text-primary-black'>{item.title}</h3>
                                         </div>
-                                        <p className='text-slate-500 font-semibold text-sm md:text-base leading-relaxed'>{item.sub}</p>
+                                        <p className='text-slate-500 font-medium text-sm md:text-base leading-relaxed'>{item.sub}</p>
                                     </motion.div>
                                 ))}
                             </div>

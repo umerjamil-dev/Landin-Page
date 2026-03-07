@@ -42,7 +42,7 @@ const CrmCore = ({
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-5xl font-bold text-slate-900 leading-[1.2]"
+                        className="text-3xl md:text-5xl font-medium text-slate-900 leading-[1.2]"
                     >
                         {title}
                     </motion.h2>
@@ -50,7 +50,7 @@ const CrmCore = ({
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="text-slate-700 font-semibold lg:text-lg "
+                        className="text-slate-700 font-medium lg:text-lg "
                     >
                         {mainDescription}
                     </motion.p>
@@ -77,7 +77,7 @@ const CrmCore = ({
                             </div>
 
                             {/* Content */}
-                            <h3 className="text-white text-xl tracking-wider font-bold mb-6">
+                            <h3 className="text-white text-xl tracking-wider font-medium mb-6">
                                 {feature.title}
                             </h3>
                             <p className=" text-white text-center text-sm leading-relaxed mb-8">
@@ -86,7 +86,7 @@ const CrmCore = ({
 
                             {/* Read More */}
                             <Link to="/contact">
-                                <button className="text-white text-xs font-bold uppercase tracking-widest hover:text-primary-red transition-colors">
+                                <button className="text-white text-xs font-medium uppercase tracking-widest hover:text-primary-red transition-colors">
                                     Read More
                                 </button>
                             </Link>

@@ -18,8 +18,8 @@ const CtaTwo = () => {
                     className="flex flex-col space-y-8"
                 >
                     <div className="space-y-4">
-                        <h4 className="text-primary-black font-bold text-lg">Workforce Excellence</h4>
-                        <h2 className="text-4xl md:text-5xl font-bold text-primary-black tracking-tight leading-tight">
+                        <h4 className="text-primary-black font-medium text-lg">Workforce Excellence</h4>
+                        <h2 className="text-4xl md:text-5xl font-medium text-primary-black tracking-tight leading-tight">
                             Modern HRMS Solutions For Your Workforce
                         </h2>
                         <p className="text-primary-gray font-medium leading-relaxed">
@@ -30,7 +30,7 @@ const CtaTwo = () => {
                     <div className="space-y-8">
                         {/* Feature 1 */}
                         <div className="space-y-2">
-                            <h3 className="text-2xl font-bold text-primary-black">Automated Payroll Management</h3>
+                            <h3 className="text-2xl font-medium text-primary-black">Automated Payroll Management</h3>
                             <p className="text-primary-gray font-medium leading-relaxed">
                                 Simplify complex payroll calculations, tax compliance, and benefit administration with our integrated automated payroll system for error-free processing.
                             </p>
@@ -38,7 +38,7 @@ const CtaTwo = () => {
 
                         {/* Feature 2 */}
                         <div className="space-y-2">
-                            <h3 className="text-2xl font-bold text-primary-black">Employee Performance Tracking</h3>
+                            <h3 className="text-2xl font-medium text-primary-black">Employee Performance Tracking</h3>
                             <p className="text-primary-gray font-medium leading-relaxed">
                                 Monitor employee progress and facilitate growth with comprehensive performance reviews and real-time attendance tracking tools.
                             </p>
@@ -50,7 +50,7 @@ const CtaTwo = () => {
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="px-10 py-4 border-2 border-primary-red text-primary-black font-bold rounded-full hover:bg-primary-red hover:text-white transition-all duration-300"
+                                className="px-10 py-4 border-2 border-primary-red text-primary-black font-medium rounded-full hover:bg-primary-red hover:text-white transition-all duration-300"
                             >
                                 Get Started Free
                             </motion.button>
@@ -69,7 +69,7 @@ const CtaTwo = () => {
                                 ))}
                             </div>
                             <div>
-                                <h4 className="font-bold text-primary-black text-lg">2.5k +</h4>
+                                <h4 className="font-medium text-primary-black text-lg">2.5k +</h4>
                                 <p className="text-primary-gray text-sm font-medium">Active HR Users</p>
                             </div>
                         </div>

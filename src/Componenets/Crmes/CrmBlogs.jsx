@@ -54,7 +54,7 @@ const CrmBlogs = () => {
         <>
             <section className='custom-padding py-20 bg-white'>
                 <div className='flex flex-col   justify-center items-center mb-10'>
-                    <h2 className='text-3xl md:text-4xl text-center font-semibold text-gray-900 mb-4'>Our latest news blogs</h2>
+                    <h2 className='text-3xl md:text-4xl text-center font-medium text-gray-900 mb-4'>Our latest news blogs</h2>
                     <p className='text-priamry-black text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 
                 </div>
@@ -88,13 +88,13 @@ const CrmBlogs = () => {
                                         </div>
                                     </div>
 
-                                    <h3 className='text-white text-xl font-bold leading-tight line-clamp-2 uppercase'>
+                                    <h3 className='text-white text-xl font-medium leading-tight line-clamp-2 uppercase'>
                                         {blog.title}
                                     </h3>
 
                                     <div className='flex items-center justify-between pt-4'>
                                         <div className='flex items-center gap-2 text-white group'>
-                                            <span className='font-bold border-b border-transparent group-hover:border-white transition-all'>Read More</span>
+                                            <span className='font-medium border-b border-transparent group-hover:border-white transition-all'>Read More</span>
                                             <ArrowRight size={18} className='transition-transform group-hover:translate-x-1' />
                                         </div>
                                         <div className='bg-white/20 p-2 rounded-full text-white group-hover:bg-white group-hover:text-primary-red transition-all'>

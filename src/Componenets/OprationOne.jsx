@@ -23,7 +23,7 @@ const OprationOne = () => {
                     className="flex flex-col space-y-8 "
                 >
                     <div className="space-y-4">
-                        <h2 className="text-4xl md:text-5xl font-bold text-center text-primary-black tracking-tight custom-size:text-left">
+                        <h2 className="text-4xl md:text-5xl font-medium text-center text-primary-black tracking-tight custom-size:text-left">
                             Operations & Workflow
                         </h2>
                         <p className="text-primary-black font-medium leading-relaxed max-w-xl  mx-auto custom-size:mx-0">
@@ -43,7 +43,7 @@ const OprationOne = () => {
                                     className="flex items-center gap-4 border-2 border-primary-red px-6 py-3 rounded-full group cursor-default hover:bg-primary-red transition-all duration-300"
                                 >
                                     <CheckCircle2 size={24} className="text-primary-black group-hover:text-white transition-colors" />
-                                    <span className="text-primary-black font-bold group-hover:text-white transition-colors whitespace-nowrap">
+                                    <span className="text-primary-black font-medium group-hover:text-white transition-colors whitespace-nowrap">
                                         {item}
                                     </span>
                                 </motion.div>
@@ -60,7 +60,7 @@ const OprationOne = () => {
                             <div className="p-3 bg-white/20 rounded-full">
                                 <ShieldCheck size={40} />
                             </div>
-                            <h3 className="text-2xl font-bold uppercase tracking-wider">Guarantee</h3>
+                            <h3 className="text-2xl font-medium uppercase tracking-wider">Guarantee</h3>
                             <p className=" leading-tight opacity-90 font-medium">
                                 We provide 99.9% operational and enterprise-grade security.
                             </p>

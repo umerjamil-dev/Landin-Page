@@ -14,7 +14,7 @@ const TenantsSummaryCard = () => {
     return (
         <div className="bg-white p-2 rounded-xl shadow-2xl w-full max-w-[300px] font-sans hover:scale-105 transition-all duration-300">
             <div className="flex justify-between items-center mb-3">
-                <h4 className="font-bold text-gray-800 text-[10px] sm:text-xs tracking-wide">Tenants summary</h4>
+                <h4 className="font-medium text-gray-800 text-[10px] sm:text-xs tracking-wide">Tenants summary</h4>
                 <MoreVertical size={14} className="text-gray-400 cursor-pointer" />
             </div>
 
@@ -29,7 +29,7 @@ const TenantsSummaryCard = () => {
                         <circle cx="18" cy="18" r="15.915" fill="transparent" stroke="#A855F7" strokeWidth="4" strokeDasharray="15 85" strokeDashoffset="-85" className="drop-shadow-sm" />
                     </svg>
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                        <span className="font-bold text-gray-800 text-xs">3002</span>
+                        <span className="font-medium text-gray-800 text-xs">3002</span>
                         <span className="text-[7px] text-gray-400 font-medium leading-tight">Tenant<br />total count</span>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const TenantsSummaryCard = () => {
                     </div>
                     <div className="space-y-2">
                         {data.map((item, idx) => (
-                            <div key={idx} className="grid grid-cols-5 gap-1 items-center text-[9px] text-gray-600 font-semibold">
+                            <div key={idx} className="grid grid-cols-5 gap-1 items-center text-[9px] text-gray-600 font-medium">
                                 <span className="text-gray-800 whitespace-nowrap">{item.type}</span>
 
                                 {/* Progress Bar Visual */}
@@ -66,7 +66,7 @@ const TenantsSummaryCard = () => {
 };
 
 const CrmesCta = () => {
-    
+
     const features = [
         {
             icon: Users,
@@ -99,7 +99,7 @@ const CrmesCta = () => {
                         className='space-y-4   pl-4 md:pl-9 lg:pl-16 xl:pl-20 2xl:pl-30'
                     >
                         <h4 className='text-white text-lg md:text-xl font-medium tracking-wider uppercase'>CRM Benefits</h4>
-                        <h2 className='text-white md:text-4xl text-3xl lg:text-5xl font-bold leading-tight'>
+                        <h2 className='text-white md:text-4xl text-3xl lg:text-5xl font-medium leading-tight'>
                             Ready to Streamline Your <br className='hidden xl:block' /> Business Operations?
                         </h2>
                     </motion.div>
@@ -113,7 +113,7 @@ const CrmesCta = () => {
                             transition={{ duration: 0.8 }}
                             src={Crm2}
                             alt="CRM Dashboard Preview"
-                    className='relative -left-16 sm:-left-20 w-[100%]  '
+                            className='relative -left-16 sm:-left-20 w-[100%]  '
                         />
 
                         {/* Floater Card - Tenants Summary */}
@@ -156,7 +156,7 @@ const CrmesCta = () => {
                                     <div className='p-3 bg-primary-red/10 rounded-full w-fit group-hover:bg-primary-red group-hover:text-white transition-colors duration-300'>
                                         <feature.icon className='w-6 h-6 text-primary-red group-hover:text-white transition-colors duration-300' />
                                     </div>
-                                    <h3 className='font-bold text-xl text-primary-black'>{feature.title}</h3>
+                                    <h3 className='font-medium text-xl text-primary-black'>{feature.title}</h3>
                                 </div>
                                 <p className='text-gray-600 leading-relaxed text-sm md:text-base'>
                                     {feature.description}

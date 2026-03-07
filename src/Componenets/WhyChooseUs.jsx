@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { WhyChoose1 } from '../assets'
 
-const   WhyChooseUs = () => {
+const WhyChooseUs = () => {
     const features = [
         "Advanced AI Analytics",
         "Strategic BPO Excellence",
@@ -29,11 +29,11 @@ const   WhyChooseUs = () => {
                     viewport={{ once: true }}
                     className='flex flex-col space-y-6'
                 >
-                    <div className='flex items-center gap-2 text-primary-red font-bold tracking-widest text-sm uppercase'>
+                    <div className='flex items-center gap-2 text-primary-red font-medium tracking-widest text-sm uppercase'>
                         <span className='w-10 h-[2px] bg-primary-red'></span>
                         Core Advantages
                     </div>
-                    <h2 className='text-4xl md:text-5xl font-bold text-primary-black tracking-tight leading-tight'>
+                    <h2 className='text-4xl md:text-5xl font-medium text-primary-black tracking-tight leading-tight'>
                         Why Organizations Trust <br className='hidden custom-size-two:block' /> <span className='text-primary-red'>ProcessIQ Tech</span>
                     </h2>
 
@@ -59,7 +59,7 @@ const   WhyChooseUs = () => {
                                 <div className='w-5 h-5 rounded-full bg-red-50 flex items-center justify-center group-hover:bg-primary-red transition-all duration-300'>
                                     <div className='w-1.5 h-1.5 rounded-full bg-primary-red group-hover:bg-white' />
                                 </div>
-                                <span className='text-slate-800 font-bold text-[15px] leading-tight'>
+                                <span className='text-slate-800 font-medium text-[15px] leading-tight'>
                                     {feature}
                                 </span>
                             </motion.div>

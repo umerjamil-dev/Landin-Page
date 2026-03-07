@@ -16,53 +16,53 @@ const CrmService = () => {
                 title: 'Employee',
                 desc: 'Manage employee records and workforce operations ',
                 icon: <Users size={32} />
-            },    
+            },
             {
                 id: 2,
                 title: 'Recruitment',
                 desc: 'Manage hiring process and talent acquisition tasks  ',
                 icon: <Briefcase size={32} />
-            },   
+            },
             {
                 id: 3,
                 title: 'Attendance',
                 desc: 'Manage employee time tracking and attendance records ',
                 icon: <Clock size={32} />
-            },    
+            },
             {
                 id: 4,
                 title: 'Payroll',
                 desc: 'Manage salaries, taxes, deductions and payment processing ',
                 icon: <BarChart3 size={32} />
-            },  
+            },
             {
                 id: 5,
                 title: 'Performance',
                 desc: 'Manage employee KPIs and performance review processes ',
                 icon: <ShieldCheck size={32} />
-            },   
+            },
             {
                 id: 6,
                 title: 'Documents',
                 desc: 'Manage document storage with secure access and control ',
                 icon: <FileText size={32} />
-            }     
+            }
         ];
 
     return (
         <section className="py-20 bg-white custom-padding mt-18 overflow-hidden">
             <div className="flex flex-col mb-12">
-                <h3 className='text-center text-xl font-semibold text-primary-black uppercase mb-10 '>our services</h3>
+                <h3 className='text-center text-xl font-medium text-primary-black uppercase mb-10 '>our services</h3>
                 <motion.h2
                     initial={{ opacity: 0, x: -30 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl font-semibold text-primary-black uppercase text-center"
+                    className="text-4xl font-medium text-primary-black uppercase text-center"
                 >
-                   CRM Solutions for Every Business
+                    CRM Solutions for Every Business
                 </motion.h2>
 
-                
+
             </div>
             <div className="relative">
                 <Swiper
@@ -93,14 +93,14 @@ const CrmService = () => {
                                 whileHover={{ y: -10 }}
                                 className="bg-white hover:border p-6 rounded-2xl min-h-30  flex flex-col items-start gap-4 transition-all hover:shadow-2xl hover:border-primary-red hover:border-4 "
                             >
-                               <div className='flex items-center gap-3'>
- <div className="p-4 bg-primary-gray text-white rounded-full transition-colors duration-300 hover:bg-primary-red">
-                                    {module.icon}
+                                <div className='flex items-center gap-3'>
+                                    <div className="p-4 bg-primary-gray text-white rounded-full transition-colors duration-300 hover:bg-primary-red">
+                                        {module.icon}
+                                    </div>
+                                    <h3 className="text-xl md:text-2xl  font-medium text-primary-black">{module.title}</h3>
                                 </div>
-                                    <h3 className="text-xl md:text-2xl  font-semibold text-primary-black">{module.title}</h3>
-                               </div>
                                 <div className="space-y-2">
-                                    <p className="text-primary-gray font-semibold leading-relaxed">
+                                    <p className="text-primary-gray font-medium leading-relaxed">
                                         {module.desc}
                                     </p>
                                 </div>

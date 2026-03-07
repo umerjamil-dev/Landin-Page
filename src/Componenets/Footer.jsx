@@ -96,7 +96,7 @@ const Footer = () => {
 
                         {/* Column 2: Support Links */}
                         <div className="space-y-8">
-                            <h4 className="text-xl font-bold uppercase tracking-wider text-primary-red">Support</h4>
+                            <h4 className="text-xl font-medium uppercase tracking-wider text-primary-red">Support</h4>
                             <ul className="space-y-4 text-primary-gray">
                                 {[
                                     { name: 'HOME', path: '/' },
@@ -108,7 +108,7 @@ const Footer = () => {
                                     <li key={link.name}>
                                         <Link
                                             to={link.path}
-                                            className="text-lg font-bold hover:text-primary-red transition-colors duration-300"
+                                            className="text-lg font-medium hover:text-primary-red transition-colors duration-300"
                                         >
                                             {link.name}
                                         </Link>
@@ -120,7 +120,7 @@ const Footer = () => {
                         {/* Column 3: Get in Touch */}
                         <div className="space-y-8">
                             <div>
-                                <h4 className="text-xl font-bold uppercase tracking-wider mb-6 text-primary-red">Get In Touch</h4>
+                                <h4 className="text-xl font-medium uppercase tracking-wider mb-6 text-primary-red">Get In Touch</h4>
                                 <p className="text-primary-gray font-medium mb-6">
                                     Subscribe to our newsletter for the latest tech insights and business optimization strategies.
                                 </p>
@@ -148,15 +148,15 @@ const Footer = () => {
                             <div className="space-y-4 pt-2">
                                 {/* <div className="flex items-center gap-4 group">
                                 <Phone size={20} className="group-hover:text-primary-red transition-colors text-primary-red" />
-                                <span className="font-bold">+1 281-874-8480</span>
+                                <span className="font-medium">+1 281-874-8480</span>
                             </div> */}
                                 <div className="flex items-center gap-4 group">
                                     <Mail size={20} className="group-hover:text-primary-red transition-colors text-primary-red" />
-                                    <span className="font-bold">Info@processiqtech.com</span>
+                                    <span className="font-medium">Info@processiqtech.com</span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <MapPinHouse size={20} className="group-hover:text-primary-red transition-colors text-primary-red" />
-                                    <span className="font-semibold">150 NW 72ND AVE TOWER 1 STE 455 #18787, MIAMI, FL 33126</span>
+                                    <span className="font-medium">150 NW 72ND AVE TOWER 1 STE 455 #18787, MIAMI, FL 33126</span>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-300 py-8 custom-padding">
                     <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-                        <p className="font-bold text-center md:text-left text-sm md:text-base">
+                        <p className="font-medium text-center md:text-left text-sm md:text-base">
                             Copyright © 2026 ProcessIQ Tech All Rights Reserved.
                         </p>
                     </div>

@@ -5,7 +5,7 @@ import { CrmMainOne, Line1, Line2 } from '../assets'
 import { Link } from 'react-router-dom'
 
 const Crm = () => {
-// animation variants 
+    // animation variants 
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -60,11 +60,11 @@ const Crm = () => {
                     viewport={{ once: true }}
                     className='flex flex-col items-center justify-center gap-6 md:gap-8 z-10'
                 >
-                    <motion.h4 variants={itemVariants} className='text-xl md:text-2xl font-semibold text-primary-black text-center tracking-wide'>
+                    <motion.h4 variants={itemVariants} className='text-xl md:text-2xl font-medium text-primary-black text-center tracking-wide'>
                         CRM made simple
                     </motion.h4>
 
-                    <motion.h2 variants={itemVariants} className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl custom-size-two:text-6xl xl:text-7xl font-bold text-primary-black text-center capitalize leading-tight'>
+                    <motion.h2 variants={itemVariants} className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl custom-size-two:text-6xl xl:text-7xl font-medium text-primary-black text-center capitalize leading-tight'>
                         all in one CRM for <br className='hidden md:block' /> modern teams
                     </motion.h2>
 
@@ -73,23 +73,23 @@ const Crm = () => {
                     </motion.p>
 
                     <motion.div variants={itemVariants} className='flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 w-full sm:w-auto mt-2'>
-                       <Link to={'/contact'}>
-                        <motion.button
-                            whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(237, 28, 36, 0.3)" }}
-                            whileTap={{ scale: 0.95 }}
-                            className='bg-primary-red text-white px-8 py-3 rounded-full capitalize text-lg font-medium cursor-pointer transition-all duration-300 w-full sm:w-auto'
-                        >
-                            request a demo
-                        </motion.button>
-                       </Link>
                         <Link to={'/contact'}>
-                        <motion.button
-                            whileHover={{ scale: 1.05, backgroundColor: "#ED1C24", boxShadow: "0px 10px 20px rgba(12, 12, 12, 0.3)" }}
-                            whileTap={{ scale: 0.95 }}
-                            className='bg-primary-black text-white px-8 py-3 rounded-full capitalize text-lg font-medium cursor-pointer transition-all duration-300 w-full sm:w-auto'
-                        >
-                            Getting Started
-                        </motion.button></Link>
+                            <motion.button
+                                whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(237, 28, 36, 0.3)" }}
+                                whileTap={{ scale: 0.95 }}
+                                className='bg-primary-red text-white px-8 py-3 rounded-full capitalize text-lg font-medium cursor-pointer transition-all duration-300 w-full sm:w-auto'
+                            >
+                                request a demo
+                            </motion.button>
+                        </Link>
+                        <Link to={'/contact'}>
+                            <motion.button
+                                whileHover={{ scale: 1.05, backgroundColor: "#ED1C24", boxShadow: "0px 10px 20px rgba(12, 12, 12, 0.3)" }}
+                                whileTap={{ scale: 0.95 }}
+                                className='bg-primary-black text-white px-8 py-3 rounded-full capitalize text-lg font-medium cursor-pointer transition-all duration-300 w-full sm:w-auto'
+                            >
+                                Getting Started
+                            </motion.button></Link>
                     </motion.div>
                 </motion.div>
 

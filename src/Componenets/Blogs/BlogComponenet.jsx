@@ -82,13 +82,13 @@ const BlogComponenet = () => {
                                     </div>
                                 </div>
 
-                                <h3 className='text-white text-xl font-bold leading-tight line-clamp-2 uppercase'>
+                                <h3 className='text-white text-xl font-medium leading-tight line-clamp-2 uppercase'>
                                     {blog.title}
                                 </h3>
 
                                 <div className='flex items-center justify-between pt-4'>
                                     <div className='flex items-center gap-2 text-white group'>
-                                        <span className='font-bold border-b border-transparent group-hover:border-white transition-all'>Read More</span>
+                                        <span className='font-medium border-b border-transparent group-hover:border-white transition-all'>Read More</span>
                                         <ArrowRight size={18} className='transition-transform group-hover:translate-x-1' />
                                     </div>
                                     <div className='bg-white/20 p-2 rounded-full text-white group-hover:bg-white group-hover:text-primary-red transition-all'>

@@ -54,7 +54,7 @@ const CrmClient = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-3xl md:text-5xl font-bold text-primary-black uppercase tracking-tight text-center max-w-2xl leading-tight"
+                        className="text-3xl md:text-5xl font-medium text-primary-black uppercase tracking-tight text-center max-w-2xl leading-tight"
                     >
                         Customer Reviews and Success Stories
                     </motion.h2>
@@ -98,11 +98,11 @@ const CrmClient = () => {
                                                 className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-md"
                                             />
                                             <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-primary-red rounded-full flex items-center justify-center border-2 border-white">
-                                                <span className="text-white text-[10px] font-bold">"</span>
+                                                <span className="text-white text-[10px] font-medium">"</span>
                                             </div>
                                         </div>
                                         <div className="flex flex-col">
-                                            <h3 className="text-xl md:text-2xl font-bold text-primary-black leading-tight">
+                                            <h3 className="text-xl md:text-2xl font-medium text-primary-black leading-tight">
                                                 {item.name}
                                             </h3>
                                             <p className="text-slate-500 font-medium text-sm">

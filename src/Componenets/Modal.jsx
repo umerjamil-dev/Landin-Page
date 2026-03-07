@@ -87,7 +87,7 @@ const Modal = ({ isOpen, onClose }) => {
                     >
                         {/* Header */}
                         <div className="flex items-center justify-between p-6 sm:p-8 border-b border-gray-100">
-                            <h2 className="text-2xl sm:text-3xl font-bold text-primary-red">Request A Demo</h2>
+                            <h2 className="text-2xl sm:text-3xl font-medium text-primary-red">Request A Demo</h2>
                             <button
                                 onClick={onClose}
                                 className="p-2 rounded-full hover:bg-gray-100 transition-colors text-gray-500 hover:text-primary-red"
@@ -102,7 +102,7 @@ const Modal = ({ isOpen, onClose }) => {
                                 {/* Left Column */}
                                 <div className="space-y-6">
                                     <div className="space-y-2">
-                                        <label className="text-sm font-bold text-primary-black">Your Name</label>
+                                        <label className="text-sm font-medium text-primary-black">Your Name</label>
                                         <input
                                             type="text"
                                             name="name"
@@ -114,7 +114,7 @@ const Modal = ({ isOpen, onClose }) => {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-sm font-bold text-primary-black">Job Position</label>
+                                        <label className="text-sm font-medium text-primary-black">Job Position</label>
                                         <select
                                             name="position"
                                             value={formData.position}
@@ -130,7 +130,7 @@ const Modal = ({ isOpen, onClose }) => {
                                         </select>
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-sm font-bold text-primary-black">Your Email</label>
+                                        <label className="text-sm font-medium text-primary-black">Your Email</label>
                                         <input
                                             type="email"
                                             name="email"
@@ -146,7 +146,7 @@ const Modal = ({ isOpen, onClose }) => {
                                 {/* Right Column */}
                                 <div className="space-y-6">
                                     <div className="space-y-2">
-                                        <label className="text-sm font-bold text-primary-black">Company Name</label>
+                                        <label className="text-sm font-medium text-primary-black">Company Name</label>
                                         <input
                                             type="text"
                                             name="company"
@@ -158,7 +158,7 @@ const Modal = ({ isOpen, onClose }) => {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-sm font-bold text-primary-black">Total Employees in Company</label>
+                                        <label className="text-sm font-medium text-primary-black">Total Employees in Company</label>
                                         <input
                                             type="text"
                                             name="employees"
@@ -170,7 +170,7 @@ const Modal = ({ isOpen, onClose }) => {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-sm font-bold text-primary-black">Your Number</label>
+                                        <label className="text-sm font-medium text-primary-black">Your Number</label>
                                         <input
                                             type="tel"
                                             name="phone"
@@ -186,7 +186,7 @@ const Modal = ({ isOpen, onClose }) => {
 
                             {/* Full Width Fields */}
                             <div className="space-y-2">
-                                <label className="text-sm font-bold text-primary-black">Best Time to Contact</label>
+                                <label className="text-sm font-medium text-primary-black">Best Time to Contact</label>
                                 <input
                                     type="text"
                                     name="bestTime"
@@ -199,7 +199,7 @@ const Modal = ({ isOpen, onClose }) => {
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-sm font-bold text-primary-black">Comments</label>
+                                <label className="text-sm font-medium text-primary-black">Comments</label>
                                 <textarea
                                     name="comments"
                                     value={formData.comments}
@@ -213,7 +213,7 @@ const Modal = ({ isOpen, onClose }) => {
 
                             {/* Checkboxes */}
                             <div className="space-y-3">
-                                <label className="text-sm font-bold text-primary-black">I Require</label>
+                                <label className="text-sm font-medium text-primary-black">I Require</label>
                                 <div className="flex flex-wrap gap-6">
                                     <label className="flex items-center gap-2 cursor-pointer group">
                                         <div className="w-5 h-5 border-2 border-gray-300 rounded flex items-center justify-center group-hover:border-primary-red transition-colors">
@@ -261,7 +261,7 @@ const Modal = ({ isOpen, onClose }) => {
                             <button
                                 type="submit"
                                 disabled={loading}
-                                className="bg-primary-red text-white font-bold py-3 px-10 rounded hover:bg-primary-black transition-colors duration-300 shadow-lg disabled:opacity-50"
+                                className="bg-primary-red text-white font-medium py-3 px-10 rounded hover:bg-primary-black transition-colors duration-300 shadow-lg disabled:opacity-50"
                             >
                                 {loading ? 'Sending...' : 'Submit'}
                             </button>

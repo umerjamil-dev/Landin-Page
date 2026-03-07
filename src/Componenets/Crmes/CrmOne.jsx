@@ -34,10 +34,10 @@ const CrmOne = () => {
                     className='space-y-6'
                 >
                     <div className='space-y-2'>
-                        <h4 className='text-xl md:text-2xl font-semibold text-primary-black border-l-4 border-primary-red pl-3'>
+                        <h4 className='text-xl md:text-2xl font-medium text-primary-black border-l-4 border-primary-red pl-3'>
                             About Our CRM Journey
                         </h4>
-                        <h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-black leading-tight'>
+                        <h2 className='text-3xl sm:text-4xl lg:text-5xl font-medium text-primary-black leading-tight'>
                             Innovating CRM for <br className='hidden lg:block' /> Modern Teams
                         </h2>
                     </div>
@@ -57,10 +57,10 @@ const CrmOne = () => {
                                 whileHover={{ scale: 1.02, backgroundColor: "#fff" }}
                                 className='bg-white/80 backdrop-blur-sm rounded-xl border border-transparent hover:border-primary-red transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-4 sm:gap-6 px-4 sm:px-6 py-3 sm:py-4 max-w-md cursor-default'
                             >
-                                <div className='rounded-l-full px-6 bg-primary-black rounded-r-full   text-white flex items-center justify-center text-sm sm:text-base font-bold shrink-0'>
+                                <div className='rounded-l-full px-6 bg-primary-black rounded-r-full   text-white flex items-center justify-center text-sm sm:text-base font-medium shrink-0'>
                                     {index + 1}
                                 </div>
-                                <p className='font-semibold text-primary-black text-sm sm:text-lg lg:text-xl'>
+                                <p className='font-medium text-primary-black text-sm sm:text-lg lg:text-xl'>
                                     {value}
                                 </p>
                             </motion.div>
@@ -81,7 +81,7 @@ const CrmOne = () => {
                         <div className='flex items-center gap-4'>
                             <img className='h-12   ' src={HeroMini} alt="User avatars" />
                             <div className='flex flex-col'>
-                                <h3 className='text-xl sm:text-2xl font-bold text-primary-black text-center'>3.5k+</h3>
+                                <h3 className='text-xl sm:text-2xl font-medium text-primary-black text-center'>3.5k+</h3>
                                 <p className='text-gray-600 text-sm sm:text-base font-medium'>Active Users</p>
                             </div>
                         </div>

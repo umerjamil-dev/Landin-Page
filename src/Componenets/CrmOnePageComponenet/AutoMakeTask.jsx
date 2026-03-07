@@ -32,11 +32,11 @@ const AutoMakeTask = ({
                     transition={{ duration: 0.6 }}
                     className="flex flex-col space-y-8"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold text-slate-900 ">
+                    <h2 className="text-3xl md:text-5xl font-medium text-slate-900 ">
                         {title}
                     </h2>
 
-                    <p className="text-slate-800 font-semibold text-lg ">
+                    <p className="text-slate-800 font-medium text-lg ">
                         {description}
                     </p>
 
@@ -44,7 +44,7 @@ const AutoMakeTask = ({
                         {points.map((point, index) => (
                             <li key={index} className="flex items-center gap-3">
                                 <CheckCircle2 className="text-red-600 w-6 h-6 flex-shrink-0" />
-                                <span className="text-slate-900 font-bold text-lg">{point}</span>
+                                <span className="text-slate-900 font-medium text-lg">{point}</span>
                             </li>
                         ))}
                     </ul>
@@ -53,14 +53,14 @@ const AutoMakeTask = ({
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-black text-primary-red px-12 py-4 rounded-full font-bold text-lg w-fit shadow-xl hover:shadow-primary-red/20 transition-all border border-transparent hover:border-primary-red/30"
+                            className="bg-black text-primary-red px-12 py-4 rounded-full font-medium text-lg w-fit shadow-xl hover:shadow-primary-red/20 transition-all border border-transparent hover:border-primary-red/30"
                         >
                             {btnText}
                         </motion.button>
                     </Link>
                 </motion.div>
 
-                
+
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}

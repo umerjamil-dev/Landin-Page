@@ -34,13 +34,13 @@ const AboutHero = () => {
           animate="visible"
           className='flex flex-col justify-center space-y-6 lg:space-y-8'
         >
-          <div className='flex text-center lg:text-left items-center gap-2 text-primary-red font-bold tracking-[0.2em] uppercase text-sm'>
+          <div className='flex text-center lg:text-left items-center gap-2 text-primary-red font-medium tracking-[0.2em] uppercase text-sm'>
             <span className='w-8 h-[2px] bg-primary-red'></span>
             About ProcessIQ Tech
           </div>
           <motion.h1
             variants={itemVariants}
-            className='text-3xl md:text-5xl lg:text-7xl font-bold text-primary-black leading-tight '
+            className='text-3xl md:text-5xl lg:text-7xl font-medium text-primary-black leading-tight '
           >
             Engineering <span className='text-primary-red'>Excellence</span> <br className='hidden md:block' /> for the Digital Era
           </motion.h1>
@@ -60,7 +60,7 @@ const AboutHero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className='bg-primary-red text-white px-10 py-4 rounded-full font-bold transition-all shadow-lg shadow-primary-red/20 w-full sm:w-auto flex justify-center'
+                className='bg-primary-red text-white px-10 py-4 rounded-full font-medium transition-all shadow-lg shadow-primary-red/20 w-full sm:w-auto flex justify-center'
               >
                 Join Our Journey
               </motion.button>
@@ -69,7 +69,7 @@ const AboutHero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className='bg-primary-black text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 border-none transition-all hover:bg-slate-800 w-full sm:w-auto'
+                className='bg-primary-black text-white px-8 py-4 rounded-full font-medium flex items-center justify-center gap-2 border-none transition-all hover:bg-slate-800 w-full sm:w-auto'
               >
                 Explore Services
               </motion.button>

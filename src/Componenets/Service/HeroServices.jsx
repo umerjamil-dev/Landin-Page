@@ -8,10 +8,10 @@ import { Autoplay, EffectFade, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/pagination'
-import { myhrm1, myhrm2, myhrm4,crm2main21 } from '../../assets';
+import { myhrm1, myhrm2, myhrm4, crm2main21 } from '../../assets';
 
 const HeroServices = () => {
-  const images = [myhrm1, myhrm2, myhrm4,crm2main21];
+  const images = [myhrm1, myhrm2, myhrm4, crm2main21];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -68,12 +68,12 @@ const HeroServices = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-red opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-red"></span>
             </span>
-            <span className="text-xs sm:text-sm font-semibold tracking-wider uppercase">Best HRMS Solution 2026</span>
+            <span className="text-xs sm:text-sm font-medium tracking-wider uppercase">Best HRMS Solution 2026</span>
           </motion.div>
 
           <motion.h1
             variants={itemVariants}
-            className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-black leading-[1.2] custom-size:leading-[1.1] capitalize'
+            className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-primary-black leading-[1.2] custom-size:leading-[1.1] capitalize'
           >
             Get Automated With <br className='hidden sm:block' />
             <span className="text-primary-red underline decoration-primary-red/20 underline-offset-8">The Best HRMS</span> for Businesses
@@ -95,7 +95,7 @@ const HeroServices = () => {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1)" }}
                 whileTap={{ scale: 0.95 }}
-                className='bg-primary-red text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-bold transition-all border-2 border-primary-red hover:bg-transparent hover:text-primary-red text-sm sm:text-base'
+                className='bg-primary-red text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-medium transition-all border-2 border-primary-red hover:bg-transparent hover:text-primary-red text-sm sm:text-base'
               >
                 Learn More
               </motion.button>
@@ -104,7 +104,7 @@ const HeroServices = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className='bg-primary-black text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-bold flex items-center justify-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black text-sm sm:text-base'
+                className='bg-primary-black text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-medium flex items-center justify-center gap-2 border-2 border-primary-black transition-all hover:bg-transparent hover:text-primary-black text-sm sm:text-base'
               >
                 Request a Demo
               </motion.button>
