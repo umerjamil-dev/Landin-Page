@@ -3,7 +3,7 @@ export {default as HeroImg} from './Home/HeroImg.png'
 export {default as WhyChoose1} from './Home/WhyChoose1.png'
 export {default as Line1} from './Home/Line1.png'
 export {default as Line2} from './Home/Line2.png'
-
+export {default as front} from './front.png'
 
 // logos 
 export {default as Logo1} from './logo/Logo1.png'

@@ -42,6 +42,7 @@ const VideoIcon = () => {
                 onClose={() => setIsVideoOpen(false)}
                 videoId="ScMzIvxBSi4" // You can change this to your actual video ID
             />
+            
         </>
     )
 }

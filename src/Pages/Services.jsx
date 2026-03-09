@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header, HeroServices, SliderOne, ServicesGrid, CtaTwo, Footer } from '../Componenets'
+import NewSection from '../Componenets/Home/NewSection'
 
 const Services = () => {
   return (
@@ -12,6 +13,7 @@ const Services = () => {
       {/* SliderOne end */}
       <ServicesGrid />
       {/* ServicesGrid end */}
+       <NewSection />
       <CtaTwo />
       {/* CtaTwo end */}
       <Footer />

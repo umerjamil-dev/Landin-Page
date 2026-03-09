@@ -16,6 +16,8 @@ const About = () => {
       <Accounts/>
       {/* footer  */}
       <Footer/>
+      {/* bottom fotter  */}
+      
     </>
   )
 }

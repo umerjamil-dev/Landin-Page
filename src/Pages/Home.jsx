@@ -2,6 +2,7 @@ import React from 'react'
 // IMPORT COMPONENETENST HERE  sorry for capatilize typing
 import { Header, Hero, SliderOne, TopModules, WhyChooseUs, Accounts, OprationOne, FAQS, CtaOne, Footer } from '../Componenets'
 
+
 const Home = () => {
     const data = [
         {
@@ -19,6 +20,8 @@ const Home = () => {
             <SliderOne />
             {/* top modules */}
             <TopModules />
+            {/* new  section */}
+           
             {/* why choose us */}
             <WhyChooseUs />
             {/* accounts */}
